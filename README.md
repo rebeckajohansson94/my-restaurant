@@ -1,4 +1,5 @@
 # My restaurant
+**Website:** https://rebeckajohansson94.github.io/my-restaurant/
 
 ## Description
 A restaurant website built with HTML, CSS and JavaScript
