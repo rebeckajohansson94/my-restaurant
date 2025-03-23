@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Wine & Dine - Restaurang i hjärtat av Lund</title>
+    <meta name="description" content="Välkomna till restaurangen i hjärtat av Lund! En mysig mötesplats för en bit mat och dryck. Njut av våra fantastiska rätter, hembakat bröd och goda efterrätter">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/logic.min.js" defer></script>
+    <script src="js/listeners.min.js" defer></script>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="menu-toggle-btn">
+            <i class="fa fa-bars"></i>
+        </div>            
+        <ul class="nav">
+            <li><a href="#home">Hem</a></li>
+            <li><a href="#menu">Meny</a></li>
+            <li><a href="#lunch">Lunchbuffé</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+    <header class="header" id="home">
+        <h1>Wine & Dine</h1>
+    </header>
+    <!-- ABOUT SECTION -->
+    <section>
+        <div class="about-section">
+            <h2 class="about-heading">Vår filosofi</h2>
+            <p class="about-text">En minnesvärd kväll hos oss handlar om den perfekta kombinationen av utsökt mat och dryck, i en inbjudande atmosfär med personlig och värmefull service. Vårt koncept grundar sig på en kärlek till noggrant utvalda råvaror och en matfilosofi som förenar det enkla och genuina med en modern touch. Här blandas tradition och nyskapande för att erbjuda en meny som både överraskar och inspirerar.
+            Att besöka Wine&Dine ska vara en genuin upplevelse. Oavsett om du kommer för en läcker måltid eller bara för att njuta av ett par glas vin, ska du alltid känna dig hjärtligt välkommen.</p>
+        </div>
+    </section>   
+    <div class="parallax-header"></div>   
+    <!-- MENU SECTION --> 
+    <main>
+        <div class="menu-container">
+            <h2 class="menu-heading" id="menu">Meny</h2>
+            <div class="sub-menus">
+                <button id="starters">Förrätter</button>
+                <button id="maincourse">Huvudrätter</button>
+                <button id="desserts">Efterrätter</button>
+            </div>
+            <div class="starters">
+                <h3>Förrätter</h3>
+                <div class="menu-row">
+                    <div class="menu-item">
+                        <h4>Toast skagen<span>175 kr</span></h4>
+                        <p>Räkor, majonnäs, dill, citronsaft, röd lök, rom, smörstekt toast</p>
+                        <p class="allergies">*Finns glutenfritt alternativ</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Bruschetta<span>75 kr</span></h4>
+                        <p>Färska kvisttomater, rödlök, vitlök, mozzarella</p>
+                        <p class="allergies">*Finns glutenfritt alternativ</p>
+                        
+                    </div>  
+                </div>  
+                <div class="menu-row">
+                    <div class="menu-item">
+                        <h4>Burrata<span>150 kr</span></h4>
+                        <p>Tomater, prosciutto, basilika, olivolja, balsamvinäger</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Oliver med fetaost <span>55 kr</span></h4>
+                        <p>Gröna och svarta oliver, marinerad fetaost, röd lök, timjan, olivolja, citronsaft</p>
+                    </div>           
+                </div>
+                <div class="menu-row">
+                    <div class="menu-item">
+                        <h4>Vitlöksbröd<span>65 kr</span></h4>
+                        <p>Nybakat surdegsbröd smaksatt med vitlök och färska örter. Serveras med aioli</p>
+                        <p class="allergies">*Finns laktosfritt alternativ</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Ostbricka<span>179 kr</span></h4>
+                        <p>Urval av italienska och lokala ostar serveras med stora gröna oliver, hembakat bröd och fikonmarmelad</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="maincourse">
+                <h3>Huvudrätter</h3>
+                <h4 class="sub-heading-maincourse">Kött</h4>
+                <div class="menu-row">
+                    <div class="menu-item gluten-free">
+                        <h4>Grillad entrecôte<span>310 kr</span></h4>
+                        <p>Krämig champinjonsås, hasselbackspotatis och smörstekta grönsaker</p>
+                        <p class="allergies">*Finns glutenfritt alternativ</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Oxfilé<span>295 kr</span></h4>
+                        <p>Rödvinssås, potatisgratäng och säsongens grönsaker</p>
+                        <p class="allergies">*Finns laktosfritt alternativ</p>
+                    </div>                  
+                </div>
+                <div class="menu-row">
+                    <div class="menu-item lactose-free">
+                        <h4>Lammrack<span>295 kr</span></h4>
+                        <p>Grillad med mynta och vitlök, serveras med rostade rotfrukter och tzatziki</p>
+                        <p class="allergies">*Finns som laktosfritt</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Fläskfilé<span>250 kr</span></h4>
+                        <p>Äppelchutney, klyftpotatis och grönpepparsås</p>
+                        <p class="allergies">*Finns laktosfritt alternativ</p>
+                    </div>                   
+                </div>
+                <h4 class="sub-heading-maincourse">Fisk</h4>
+                <div class="menu-row">
+                    <div class="menu-item">
+                        <h4>Lax<span>235 kr</span></h4>
+                        <p>Grillad med citronsmör, grönsaksrisotto och sparris</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Torskrygg<span>240 kr</span></h4>
+                        <p>Stekt med brynt smör, blomkålspuré och ärtor</p>
+                        <p class="allergies">*Finns laktosfritt alternativ</p>
+                    </div>                           
+                </div>
+                <h4 class="sub-heading-maincourse">Fågel</h4>
+                <div class="menu-row">
+                    <div class="menu-item">
+                        <h4>Kycklingbröst<span>210 kr</span></h4>
+                        <p>Grillad med rosmarinsås, ugnsbakade potatisar och grönsaker</p>
+                        <p class="allergies">*Finns laktosfritt alternativ</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Anka confit<span>295 kr</span></h4>
+                        <p>Apelsin- och ingefärssås, rotfruktsmos</p>
+                    </div>
+                </div>                   
+                <h4 class="sub-heading-maincourse">Vegetariskt</h4>
+                <div class="menu-row">
+                    <div class="menu-item">
+                        <h4>Vegansk lasagne<span>180 kr</span></h4>
+                        <p>Med spenat, zucchini och cashewost</p>
+                        <p class="allergies">*Finns glutenfritt alternativ</p>
+                    </div>                   
+                    <div class="menu-item">
+                        <h4>Falafel<span>160 kr</span></h4>
+                        <p>Med hummus, tabbouleh och picklad rödlök</p>
+                    </div>                       
+                </div>
+            </div>                
+            <div class="desserts">
+                <h3>Efterrätter</h3>
+                <div class="menu-row">
+                    <div class="menu-item">
+                        <h4>Chokladfondant<span>120 kr</span></h4>
+                        <p>Smält chokladfyllning, serveras med vaniljglass och färska bär</p>
+                        <p class="allergies">*Finns glutenfritt alternativ</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Pannacotta<span>110 kr</span></h4>
+                        <p>Vaniljpannacotta med hallonsås och kanderade mandlar</p>
+                        <p class="allergies">*Finns laktosfritt alternativ</p>
+                    </div>                   
+                </div>
+                <div class="menu-row">
+                    <div class="menu-item">
+                        <h4>Crème brûlée<span>130 kr</span></h4>
+                        <p>Klassisk crème brûlée med karamelliserat socker och bärkompott</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Citronmarängpaj<span>110 kr</span></h4>
+                        <p>Frisk citronkräm, toppad med fluffig maräng och smörig pajdeg</p>
+                    </div>                 
+                </div>
+            </div>               
+        </div>
+        <div class="parallax-lunch"></div>  
+    </main>
+    <!-- LUNCH SECTION -->
+    <section class="lunch-section" id="lunch">
+        <h3 class="lunch-heading">Lunchbuffé</h3>
+        <p class="lunch-about">Vår lunchbuffé serveras varje måndag till fredag mellan 11:30 och 14:00. Passa på att njuta av ett brett utbud av rätter, inklusive dagens specialerbjudande!</p>
+        <h4>Pris för lunchbuffén: <strong>125 kr/person</strong></h4>
+        <p>Klicka här nedan för att se mer information</p>
+        <button id="btn-open">Visa lunchmeny</button>
+        <button id="btn-close">Dölj lunchmeny</button>
+        <div class ="lunch-info">    
+            <div class="lunch-row">
+                <div class="lunch-item">
+                    <h4 class="lunch-sub-heading">Bufféns alternativ:</h4>
+                    <ul>
+                        <li>Kycklinggryta med rosmarin och vitlök</li>
+                        <li>Färska sallader med diverse tillbehör</li>
+                        <li>Vegetarisk lasagne med zucchini, spenat och tomatsås</li>
+                        <li>Ris med grönsaker och svampsås</li>
+                        <li>Färskt bröd och smör</li>
+                        <li>Dagens soppa (varierar varje vecka!)</li>
+                    </ul>
+                </div>
+                <div class="lunch-item">
+                    <h4 class="lunch-sub-heading drinks">Dryckesalternativ:</h4>
+                    <ul>
+                        <li>Citronvatten - Ingår</li>
+                        <li>Kaffe - Ingår</li>
+                        <li>Läsk - 20kr</li>
+                        <li>Mineralvatten - 15kr</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>      
+    <hr>
+    <!-- CONTACT SECTION -->
+    <footer id="contact">
+        <h2 class="contact-heading">Kontakta oss</h2>
+        <div class="contact-section">
+            <div class="contact-address">
+                <p><strong>Adress: </strong>Guldåkersvägen 50, Lund</p><p><strong>E-postadress: </strong>wineanddine@gmail.com</p><p><strong>Mobilnummer: </strong>0730-123456</p>
+                <img class="location" src="img/map.png" alt="Restaurant location">
+            </div>
+            <div class="contact-box">
+                <form class="contact-form" action="#" method="POST">
+                    <label for="name">Namn:</label>
+                    <input type="text" id="name" placeholder="Namn">
+                    <label for="email">E-postadress:</label>
+                    <input id="email" type="email" placeholder="E-postadress">                  
+                    <label for="message">Meddelande: </label>
+                    <textarea id="message" rows="8" placeholder="Meddelande"></textarea>
+
+                    <!-- Disabled send button, no validation -->
+                    <button class="contact-btn" type="submit" disabled>Skicka</button>
+                </form>
+            </div>
+        </div>  
+    </footer>    
+</body>
+</html>

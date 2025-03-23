@@ -1,0 +1,613 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----- GENERAL STYLING ----- */
+body{
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    color: #fefefe;
+}
+
+a:hover{
+    text-decoration: underline;
+    color:rgb(189, 140, 35);
+}
+
+h1{
+    align-items: flex-end;
+    display: flex;
+    font-size: 5rem;
+    padding: 6rem 4rem;
+}
+
+h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    scroll-margin-top: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 2rem;
+    text-align: center;
+}
+
+h4, h5{
+    font-size: 1.4rem;
+}
+
+hr{
+    margin-top: 2rem;
+}
+
+button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* ----- NAVBAR ----- */
+.nav{
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background-color: black;
+    padding: 1rem;   
+}
+
+.nav li, a{
+    font-size: 1.1rem;
+    color: #fefefe;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.header{
+    background-image: url('../img/wine-glass-picture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30rem;
+    min-width: 100%;
+    display: flex;
+}
+
+
+/* ----- PARALLAX IMAGE EFFECT ----- */
+.parallax-header {
+    background-image: url("../img/parallax-img1.jpg");
+    min-height: 25rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----- ABOUT SECTION ----- */
+.about-section{
+    height: fit-content;
+    padding: 5rem 20rem;
+}
+
+.about-heading{
+    margin-bottom: 2rem;
+}
+
+.about-text{
+    line-height: 1.5;
+    margin-bottom: -1rem;
+}
+
+.about-text, p, li{
+    font-size: 1.2rem;
+}
+
+/* ----- MENU SECTION ----- */
+.menu-container{
+    height: fit-content;
+    padding: 5rem 20rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.menu-heading{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.sub-menus ul{
+    display: flex;
+    gap: 1.5rem; 
+    list-style-type: none;
+}
+
+#starters, #maincourse, #desserts, .contact-btn{
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: 0px;
+    text-transform: uppercase;
+    background: rgb(189, 140, 35);
+    margin: 1rem 0.2rem;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.menu-row{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.menu-item{
+    width: 25rem;
+    border-bottom: 1px solid white;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.menu-item span{
+    float: right;
+}
+
+.allergies{
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: #a7a7a7;
+    font-style: italic;
+}
+
+.sub-heading-maincourse{
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    text-transform: uppercase;
+}
+
+/* ----- PARALLAX IMAGE EFFECT  ----- */
+.parallax-lunch {
+    background-image: url("../img/parallax-img2.jpg");
+    min-height: 25rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----- LUNCH SECTION ----- */
+.lunch-section{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+.lunch-heading{
+    margin: 3.5rem 0 1rem 0;
+}
+
+.lunch-about{
+    padding: 2rem 15rem 2rem 15rem;
+}
+
+#btn-open, #btn-close{
+    display: flex;
+    padding: 0.8rem;
+    align-self: center;
+    text-align: center;
+    font-size: 1.0rem;
+    font-weight: 700;
+    margin: 1rem;
+    border-radius: 10px;
+    background: rgb(189, 140, 35);
+    color: white;
+}
+
+#btn-close{
+    display: none;
+}
+
+.lunch-info{
+    list-style-type: circle;
+    display: none;
+    justify-content: space-evenly;
+}
+
+.lunch-row{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    gap: 5rem;
+}
+
+.lunch-item{
+    padding-bottom: 2rem;
+    text-align: start;
+}
+
+.lunch-sub-heading{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* ----- CONTACT SECTION ----- */
+footer{
+    margin-top: 3rem;
+}
+
+.contact-heading{
+    font-size: 3rem;
+    margin: 3rem;
+}
+
+.contact-section{
+    display: flex;
+}
+
+.contact-address {
+    width: 50vw;
+    display: block;
+    padding-left: 10rem;
+}
+
+.contact-address p{
+    display: block;
+    text-align: center;
+}
+
+.location{
+    width: 30rem;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.contact-box{
+    width: 50vw;
+    padding: 0 10rem 2rem 0;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#email, #name, #message{
+    width: 15rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+}
+
+
+/*  ------------------------------------ */
+/*  ------------RESPONSIVE-------------- */
+/*  ------------------------------------ */
+
+.menu-toggle-btn{
+    display:none;
+}
+
+@media (max-width: 800px){
+
+    /* ----- GENERAL STYLING ----- */
+    h1{
+        font-size: 3rem;
+        padding: 1rem;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    h2{
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    h3{
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        margin: 1.3rem 0 2rem 0;
+        text-align: center;
+    }
+
+    h4, h5{
+        font-size: 1.5rem;
+    }
+
+    /* ----- NAVBAR SECTION ----- */
+    .nav{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        width: auto;
+        padding: 0 2rem;
+        background-color: black;
+        height: fit-content;
+        top: 3.5rem;
+        align-items: flex-end;
+        opacity: 0.85;
+    }
+
+    .nav li{
+        padding: 0.8rem 0;
+        font-weight: 500;
+    }
+
+    .nav li:nth-last-child(1){
+        padding-bottom: 2rem;
+    }
+
+    .menu-toggle-btn{
+        display: flex;
+        font-size: 1.7rem;
+        justify-content: end;
+        padding: 1.1rem;
+        cursor: pointer;
+        color: white;
+        height: 3.5rem;
+        position: fixed;
+        width: 100%;
+        background-color: black;
+        z-index: 10;
+    }
+
+    .navigation-open{
+        display: flex;
+    }
+
+    /* ----- ABOUT SECTION ----- */
+    .about-heading{
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+
+    .about-section{
+        padding: 1rem 3rem 1rem 3rem;
+        margin-bottom: 4.5rem;
+    }
+
+    .header{
+        background-size: cover;
+        height: 20rem;
+        display: flex;
+    }
+
+    .parallax-header{
+        min-height: 15rem;
+    }
+
+    /* ----- MENU SECTION ----- */
+    .menu-container{
+        padding: 0;
+    }
+
+    .menu-heading{
+        margin-top: 1.5rem;
+    }
+
+    .sub-heading-maincourse{
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+    }
+    
+    .menu-row{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+        gap: 2rem;
+    }
+    
+    .menu-item{
+        width: 25rem;
+        border-bottom: 1px solid white;
+        margin-top: 0;
+        padding-bottom: 1.5rem;
+    }
+    
+    /* ----- LUNCH SECTION ----- */
+    .parallax-lunch{
+        min-height: 15rem;
+    }
+
+    .lunch-about{
+        padding: 1rem 3rem 1rem 3rem;
+    }
+
+    .lunch-info{
+        padding: 0 3rem;
+    }
+
+    .lunch-sub-heading{
+        font-size: 1.5rem;
+    }
+
+    .lunch-row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .lunch-item ul{
+        list-style-position: inside;
+    }
+
+    .drinks{
+        margin-top: -3rem;
+    }
+
+    /* ----- CONTACT SECTION ----- */
+    .contact-heading{
+        padding-top: 3.2rem;
+        font-size: 2.5rem;
+    }
+
+    .contact-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-address{ 
+        padding: 0;
+    }
+
+    .contact-box{
+        padding: 0;
+    }
+
+    .location{
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+    .contact-btn{
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media (min-width: 801px) and (max-width: 1250px){
+
+    /* ----- GENERAL STYLING ----- */
+    h1{
+        font-size: 3rem;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    h2{
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    h3{
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        margin: 1.5rem;
+        text-align: center;
+    }
+    
+    h4, h5{
+        font-size: 1.5rem;
+    }
+    
+    /* ----- NAVBAR SECTION ----- */
+    .nav{
+        padding: 0.1rem;
+        background-color: black;
+    }
+
+    .nav li{
+        padding: 1rem 0;
+    }
+
+    /* ----- ABOUT SECTION ----- */
+    .intro-heading{
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+
+    .about-section{
+        padding: 1rem 4rem;
+        margin-bottom: 4.5rem;
+    }
+
+    .header{
+        background-size: cover;
+        height: 20rem;
+        display: flex;
+    }
+
+    /* ----- MENU SECTION ----- */
+    .menu-heading{
+        margin-top: 1rem;
+    }
+
+    .menu-container{
+        padding: 0 4rem;
+    }
+
+    .sub-heading-maincourse{
+        margin-bottom: -0.5rem;
+        text-transform: uppercase;
+    }
+
+    .menu-row{
+        display: flex;
+        flex-direction: row;
+        padding: 2rem;
+        gap: 5rem;
+    }
+    
+    .menu-item{
+        width: 19rem;
+        border-bottom: 1px solid white;
+        padding-bottom: 2rem;
+    }
+    
+    /* ----- LUNCH SECTION ----- */
+    .lunch-about{
+        padding: 1rem 3rem;
+    }
+
+    .lunch-info{
+        padding: 0 3rem;
+    }
+
+    .lunch-sub-heading{
+        font-size: 1.5rem;
+    }
+
+    /* ----- CONTACT SECTION ----- */
+    .contact-heading{
+        padding-top: 3.2rem;
+    }
+
+    .contact-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-address{ 
+        padding: 0;
+    }
+
+    .contact-box{
+        padding: 0;
+    }
+
+    .location{
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+    .contact-btn{
+        margin-bottom: 3rem;
+    }
+
+}
